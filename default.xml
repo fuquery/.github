@@ -3,6 +3,9 @@
   <remote name="origin" fetch="git@github.com:fuquery" />
   <project name="fuquery" remote="origin" path="tools" revision="master" />
 
+  <!-- Documentation -->
+  <project name="documentation" remote="origin" path="docs" revision="master" />
+
   <!-- Projects -->
   <project name="chroma"  remote="origin" path="projects/chroma" revision="master" />
   <project name="config"  remote="origin" path="projects/config" revision="master" />
@@ -21,5 +24,9 @@
   <project name="conan" remote="origin" path="infra/conan" revision="master" />
 
   <!-- Tools -->
+  <project name=".github" path="manifest" revision="master" />
+  <repo-hooks in-project=".github" enabled-list="post-sync">
+    <hook name="post-sync" />
+  </repo-hooks>
 
 </manifest>
