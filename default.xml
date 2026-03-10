@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote name="origin" fetch="git@github.com:fuquery" />
+  <project name="fuquery" remote="origin" path="." revision="master" />
+
+  <!-- Projects -->
+  <project name="chroma"  remote="origin" path="projects/chroma" revision="master" />
+  <project name="config"  remote="origin" path="projects/config" revision="master" />
+  <project name="json5"   remote="origin" path="projects/json5" revision="master" />
+  <project name="log"     remote="origin" path="projects/log" revision="master" />
+  <project name="rpc"     remote="origin" path="projects/rpc" revision="master" />
+  <project name="retest"  remote="origin" path="projects/retest" revision="master" />
+  <project name="rsl"     remote="origin" path="projects/rsl" revision="master" />
+  <project name="xml"     remote="origin" path="projects/xml" revision="master" />
+
+  <!-- Extensions -->
+  <project name="vscode-test" remote="origin" path="extensions/vscode-test" revision="master" />
+
+  <!-- Infra -->
+  <project name="docker-p2996" remote="origin" path="infra/docker-p2996" revision="master" />
+  <project name="conan" remote="origin" path="infra/conan" revision="master" />
+
+  <!-- Tools -->
+
+</manifest>
