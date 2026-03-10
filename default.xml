@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
   <remote name="origin" fetch="git@github.com:fuquery" />
-  <project name=".github" remote="origin" path="manifest" revision="main" />
+  <project name=".github" remote="origin" path="manifest" revision="master" />
 
   <!-- Documentation -->
   <project name="documentation" remote="origin" path="docs" revision="master" />
