@@ -24,7 +24,7 @@
   <project name="conan" remote="origin" path="infra/conan" revision="master" />
 
   <!-- Tools -->
-  <project name=".github" remote="origin" path="manifest" revision="master" />
+  <project name=".github" remote="origin" path="manifest" revision="main" />
   <repo-hooks in-project=".github" enabled-list="post-sync">
     <hook name="post-sync" />
   </repo-hooks>
