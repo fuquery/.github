@@ -1,3 +1,7 @@
+"""
+Post sync hook for repo to configure the devcontainer.
+"""
+
 from pathlib import Path
 import shutil
 
