@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
   <remote name="origin" fetch="git@github.com:fuquery" />
-  <project name="fuquery" remote="origin" path="." revision="master" />
+  <project name="fuquery" remote="origin" path="tools" revision="master" />
 
   <!-- Projects -->
   <project name="chroma"  remote="origin" path="projects/chroma" revision="master" />
