@@ -23,6 +23,7 @@ def main(repo_topdir=None, **kwargs):
     configuration = repo / MANIFEST_PATH / "devcontainer.json"
     if configuration.exists():
         shutil.copy(configuration, devcontainer_path / "devcontainer.json")
+        print("Devcontainer configuration applied successfully.")
     else:
         print(f"Warning: No devcontainer.json found at {configuration}. Skipping devcontainer configuration.")
 
