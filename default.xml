@@ -26,7 +26,7 @@
   <!-- Tools -->
 
   <!-- Copy devcontainer configuration to .devcontainer/ -->
-  <repo-hooks in-project=".github" enabled-list="post-sync">
+  <repo-hooks in-project=".github" enabled-list="configure_devcontainer">
     <hook name="configure_devcontainer" />
   </repo-hooks>
 
