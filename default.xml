@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
   <remote name="origin" fetch="git@github.com:fuquery" />
-  <project name="fuquery" remote="origin" path="tools" revision="master" />
+  <project name=".github" remote="origin" path="manifest" revision="main" />
 
   <!-- Documentation -->
   <project name="documentation" remote="origin" path="docs" revision="master" />
@@ -24,9 +24,10 @@
   <project name="conan" remote="origin" path="infra/conan" revision="master" />
 
   <!-- Tools -->
-  <project name=".github" remote="origin" path="manifest" revision="main" />
+
+  <!-- Copy devcontainer configuration to .devcontainer/ -->
   <repo-hooks in-project=".github" enabled-list="post-sync">
-    <hook name="post-sync" />
+    <hook name="configure_devcontainer" />
   </repo-hooks>
 
 </manifest>
