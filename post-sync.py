@@ -4,6 +4,7 @@ Post sync hook for repo to configure the devcontainer.
 
 from pathlib import Path
 import shutil
+import sys
 
 MANIFEST_PATH = "manifest"
 
@@ -28,4 +29,5 @@ def main(repo_topdir=None, **kwargs):
         print(f"Warning: No devcontainer.json found at {configuration}. Skipping devcontainer configuration.")
 
 if __name__ == "__main__":
-    main()
+    repo_path = Path(sys.argv[1]) if len(sys.argv) == 2 else Path(__file__).parent.parent
+    main(repo_path)
